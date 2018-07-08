@@ -1,249 +1,148 @@
-/*Background colour*/
-html {
-	background-color: #FFE4E1
-}
+<!DOCTYPE html>
 
-a {
-	font-size:16px;
-}
+<html lang="en">
 
-p {
-	font-size:16px;
-}
+	<head> 
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="BSOC IT 2018 Workshop!">
+    	<meta name="author" content="BSOC IT 2018">
+    	<meta name="keywords" content="HTML, CSS, workshop, BSOC, IT, 2018">
 
-body {
-	font-family: "Helvetica"
-}
+		<title>BSOC HTML & CSS Workshop</title>
 
-h1 {
-	font-size: 45px;
-}
+		<!-- External CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- External font awesome CSS (for social media buttons) -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+		<!-- Bootstrap Core CSS -->
 
-video {
-	width: 700px;
-	height:525px;
-}
+	</head>
 
-/*Formatted, centered division line*/
-hr {
-	width: 1000px ;
-	margin-left: auto ;
-	margin-right: auto;
-    display: block;
-    height: 2px;
-}
+	<body> 
 
-h2 {
-	font-size: 30px;
-}
+		<div class="navbar">
+			<div class="content1">
+				<a href="">Home</a> |
+				<a href="">HTML tutorial</a> |
+				<a href="">CSS Tutorial</a>
+			</div>
+		</div>
 
-ul {
-	text-align: center;
-}
+		<div class="title">
+			<h1>BSOC IT 2018 HTML & CSS Workshop</h1>
+		</div>
 
-li {
-	display: inline-block;
-	list-style-type: none;
-}
+		<div class="content1">
+		<hr class="divider">
+		</div>
 
-span{
-	font-size:1em;
-}
-/*ID for main name*/
-.title {
-	width: 1000px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align: center;
-	margin-top: 80px;
-}
+		<div class="content1">  
+			<h2> Welcome!</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue, quam posuere maximus pretium, justo leo posuere neque, fermentum dapibus arcu turpis sit amet augue. In et consequat dui. Nulla scelerisque augue eu tortor sollicitudin molestie. Donec ullamcorper vulputate quam, quis sodales dolor congue et. Duis commodo libero sed tempor lacinia. Nulla facilisi. Nullam ac ipsum varius, sagittis sapien rhoncus, dapibus mi. Phasellus fringilla ornare risus, ac semper augue aliquam at. Donec et arcu fringilla, ultricies diam a, malesuada sapien. Integer augue sem, fringilla a leo quis, luctus suscipit turpis. Vestibulum libero ligula, pulvinar placerat mauris in, rutrum consequat sapien. </p>
+		</div>
 
-/*ID for blurb under title*/
-#blurb {
-	width: 700px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align: center;
-	font-size: 30px;
-}
+		<div class="content1">
+			<hr class="divider">
+		</div>
 
-/*Left justified 1 column text content*/
-.content1 {
-	width: 1000px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align:left;
-}
+		<div class="content1">  
+			<h2> Learning Objectives</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue, quam posuere maximus pretium, justo leo posuere neque, fermentum dapibus arcu turpis sit amet augue. In et consequat dui. Nulla scelerisque augue eu tortor sollicitudin molestie. Donec ullamcorper vulputate quam, quis sodales dolor congue et. Duis commodo libero sed tempor lacinia. Nulla facilisi. Nullam ac ipsum varius, sagittis sapien rhoncus, dapibus mi. Phasellus fringilla ornare risus, ac semper augue aliquam at. Donec et arcu fringilla, ultricies diam a, malesuada sapien. Integer augue sem, fringilla a leo quis, luctus suscipit turpis. Vestibulum libero ligula, pulvinar placerat mauris in, rutrum consequat sapien. </p>
+		</div>
 
-/*3 column text content*/
-.content3 {
-	width: 1000px ;
-	margin-left: auto ;
-	margin-right: auto ;
-}
+		<div class="content1">
+			<hr class="divider">
+		</div>
 
-/*Class to separate any paragraphs inside divs with content class into two columns*/
-.content3 p {
-	-webkit-column-count:3 ;
-	column-count:3;
-	-webkit-column-gap: 50px;
-	column-gap: 50px;
-	text-align: left;
-}
+		<div class="content1">  
+			<h2> Get started</h2>
+			<div class="center">
+				<a href="" class="button" target="_blank">HTML Tutorial</a>
+				<a href="" class="button" target="_blank">CSS Tutorial</a>
+			</div>
+		</div>
 
-/*Class to centre elements*/
-.center {
-	width: 1000px ;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
-}
+		<div class="content1">
+			<hr class="divider">
+		</div>
 
-/*My own buttons!*/
-.button {
-	padding:8px 30px 8px 30px; 
-	display:inline-block;
-	text-decoration: none;
-	background-color:#FFE4E1;
-	border: 0.1px solid black;
-	/*Hover colour change delay*/
-	transition-duration: 0.4s;
-	font-size: 16px;
-}
+		<div class="content1">
+			<h2>Meet the IT subcom</h2>
+		</div>
 
-/*However colour change and border removal*/
-.button:hover {
-	background-color: #E6CBC8;
-	border: 0.1px solid #E6CBC8;
-}
+		<div class="center">
 
-/*Font awesome case class buttons format; overrides linked css formatting*/
-.fa {
-	padding:8px 30px 8px 30px;
-	display:inline-block;
-	text-decoration: none;
-	background-color:#FFE4E1;
-	border: 0.1px solid black;
-	transition-duration: 0.4s;
-}
+			<span class="carousel"><img src="https://i.imgur.com/uI9hyzv.jpg" alt="Daniel" width="200px" height="200px" title="Daniel">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus nibh, interdum non dictum nec, molestie id lectus. Vestibulum tristique ex ornare, mollis elit id, bibendum lacus. .   </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/WsGH3c3.jpg" alt="Chloe" width="200px" height="200px" title="Chloe">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor sapien sed ipsum dignissim iaculis. Suspendisse molestie interdum tincidunt. In cursus dolor ut nunc cursus eleifend.   </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/bCQZxwW.jpg" alt="William" width="200px" height="200px" title="William">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit luctus porta. Morbi congue, arcu vitae ornare ornare, elit lorem consectetur diam, id pharetra dui ipsum non dolor.  </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/Rn99G1v.jpg" alt="Branda" width="200px" height="200px"" title="Branda">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a auctor orci. Suspendisse in arcu lacus. Ut ut est luctus, iaculis dolor ac, bibendum velit. Integer purus lectus, fermentum sodales convallis non, viverra a augue.  </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/tgydDBz.jpg" alt="Pennie" width="200px" height="200px" title="Pennie">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam est ex, convallis eu sagittis a, fermentum nec felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur non nisi ligula.  </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/wTQQES0.jpg" alt="kevin" width="200px" height="200px" title="Kevin">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu ligula hendrerit, posuere est sed, molestie erat. In ante lorem, molestie quis cursus sit amet, venenatis quis tellus.  </p>
+				</div>
+			</span>
 
-/*Overriding font awesome class buttons*/
-.fa:hover {
-	background-color: #E6CBC8;
-	border: 0.1px solid #E6CBC8;
-}
+		</div>
 
-/*Prevent discolouring of links*/
-a:link {color: black;}     
-a:visited {color: black;}   
-a:hover {color: black;}     
-a:active {color: black;}
+		<div class="center">
+			<button class="button" onclick="profiles.prev();">previous</button>
+			<button class="button" onclick="profiles.next();">next</button>
+		</div>
 
-.divider {
-	background-color: solid black;
-  	width: 7%;
-  	height: 0px;
-  	border: 1px solid black;
-  	margin-left:0px;
-  	text-align:left;
+		<script src="javascript.js"></script>
+		<script>
+			var profiles = new Carousel();
+		</script>
 
-}
+		<div class="content1">
+		<hr class="divider">
+		</div>
 
-/*Form*/
+		<div class="content1">
+			<h2>Get in touch</h2>
+		</div>
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #FFE4E1; 
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    background-color : #E6CBC8; 
-}
+		<div class="center">
+			<a href="http://unswbsoc.com/" class="fa fa-external-link"><span>	website</span></a>
+			<a href="mailto:itsubcommittee@unswbsoc.com" class="fa fa-envelope"><span>	email</span></a>
+			<a href="https://www.linkedin.com/company-beta/1663242/" class="fa fa-linkedin" target="_blank"><span>	linkedin</span></a>
+			<a href="https://www.facebook.com/unswbsoc/" class="fa fa-facebook" target="_blank"><span>	facebook</span></a>
+		</div>
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #FFE4E1;
-    color: black;
-    padding:8px 30px 8px 30px
-}
+	</body>
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-	background-color: #E6CBC8;
-}
+	<hr/>
+	<footer> 
+		<div class="center">
+			<address> <!--Address formatting-->
+				<font size="initial">Copyright &copy; UNSW Business Society 2018. All Rights Reserved</font>
+			</address>	
+		</div>
+	</footer>
 
-/* Add a background color and some padding around the form */
-.container {
-    background-color: #FFE4E1;
-    padding: 20px;
-    border:1px solid black;
-}
+</html>
 
-#left_content {
-	float: left;
-	width: 30%;
-	padding-right:5%;
-}
-
-#middle_content {
-	float: left;
-	width:30%;
-}
-
-#right_content {
-	float: left;
-	width:30%;
-	padding-left:5%;
-}
-
-/* The navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: black;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    left:0;
-    width: 100%; /* Full width */
-}
-
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change background on mouse-over */
-.navbar a:hover {
-    background: #E6CBC8;
-    color: black;
-}
-
-.networkname{
-	padding:8px 30px 8px 30px
-}
-
-img {
-    border-radius: 50%;
-}
-
-#intro {
-	background:url(https://i.imgur.com/hvO3MEc.jpg);
-    margin: 0px;
-    padding: 0px;
-    height:500px;
-    width:100%;
-	margin-top: 80px;
-	overflow-x: hidden; 
-}
-
-span{
-	font-size:16px;
-}
 
