@@ -226,3 +226,13 @@ input[type=submit]:hover {
 img {
     border-radius: 50%;
 }
+
+#intro {
+	background:url(https://i.imgur.com/hvO3MEc.jpg);
+    margin: 0px;
+    padding: 0px;
+    height:500px;
+    width:100%;
+	margin-top: 80px;
+	overflow-x: hidden; 
+}
