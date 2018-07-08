@@ -108,6 +108,7 @@ span{
 	border: 0.1px solid black;
 	/*Hover colour change delay*/
 	transition-duration: 0.4s;
+	font-size: 16px;
 }
 
 /*However colour change and border removal*/
