@@ -43,11 +43,12 @@ li {
 }
 
 /*ID for main name*/
-#title {
+.title {
 	width: 1000px ;
 	margin-left: auto ;
 	margin-right: auto ;
 	text-align: center;
+	margin-top: 80px;
 }
 
 /*ID for blurb under title*/
@@ -59,27 +60,27 @@ li {
 	font-size: 30px;
 }
 
-/*Class for main text divs, 600 witch and centered*/
-.content {
+/*1 column text content*/
+.content1 {
+	width: 1000px ;
+	margin-left: auto ;
+	margin-right: auto ;
+}
+
+/*3 column text content*/
+.content3 {
 	width: 1000px ;
 	margin-left: auto ;
 	margin-right: auto ;
 }
 
 /*Class to separate any paragraphs inside divs with content class into two columns*/
-.content p {
+.content3 p {
 	-webkit-column-count:3 ;
 	column-count:3;
 	-webkit-column-gap: 50px;
 	column-gap: 50px;
 	text-align: left;
-}
-
-/*Class to avoid separating alls paragraphs into two columns*/
-.content2 {
-	width: 1000px ;
-	margin-left: auto ;
-	margin-right: auto ;
 }
 
 /*Class to centre elements*/
@@ -186,4 +187,34 @@ input[type=submit]:hover {
 	float: left;
 	width:30%;
 	padding-left:5%;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left:0;
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #E6CBC8;
+    color: black;
+}
+
+.networkname{
+	padding:8px 30px 8px 30px
 }
