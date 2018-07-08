@@ -13,11 +13,12 @@
 		<title>BSOC HTML & CSS Workshop</title>
 
 		<!-- External CSS -->
-		<link rel="stylesheet" href="bsocit18.github.io/css/style.css">
+		<link rel="stylesheet" href="style.css">
 		<!-- External font awesome CSS (for social media buttons) -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
 		<!-- Bootstrap Core CSS -->
-    	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	</head>
 
 	<body> 
 
@@ -72,44 +73,49 @@
 		</div>
 
 		<div class="center">
-			<div id="left_content">
-				<p>
-					<img src="https://i.imgur.com/uI9hyzv.jpg" alt="Daniel" width="200px" height="200px" title="Daniel"> <br/>
-				</p>
 
-				<br/>
+			<span class="carousel"><img src="https://i.imgur.com/uI9hyzv.jpg" alt="Daniel" width="200px" height="200px" title="Daniel">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus nibh, interdum non dictum nec, molestie id lectus. Vestibulum tristique ex ornare, mollis elit id, bibendum lacus. .   </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/WsGH3c3.jpg" alt="Chloe" width="200px" height="200px" title="Chloe">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor sapien sed ipsum dignissim iaculis. Suspendisse molestie interdum tincidunt. In cursus dolor ut nunc cursus eleifend.   </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/bCQZxwW.jpg" alt="William" width="200px" height="200px" title="William">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit luctus porta. Morbi congue, arcu vitae ornare ornare, elit lorem consectetur diam, id pharetra dui ipsum non dolor.  </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/Rn99G1v.jpg" alt="Branda" width="200px" height="200px"" title="Branda">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a auctor orci. Suspendisse in arcu lacus. Ut ut est luctus, iaculis dolor ac, bibendum velit. Integer purus lectus, fermentum sodales convallis non, viverra a augue.  </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/tgydDBz.jpg" alt="Pennie" width="200px" height="200px" title="Pennie">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam est ex, convallis eu sagittis a, fermentum nec felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur non nisi ligula.  </p>
+				</div>
+			</span>
+			<span class="carousel"><img src="https://i.imgur.com/wTQQES0.jpg" alt="kevin" width="200px" height="200px" title="Kevin">
+				<div class="content1">  
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu ligula hendrerit, posuere est sed, molestie erat. In ante lorem, molestie quis cursus sit amet, venenatis quis tellus.  </p>
+				</div>
+			</span>
 
-				<p>
-					<img src="https://i.imgur.com/WsGH3c3.jpg" alt="Chloe" width="200px" height="200px" title="Chloe"> <br/>
-				</p>
-
-			</div>
-
-			<div id="middle_content">
-				<p>
-					<img src="https://i.imgur.com/bCQZxwW.jpg" alt="William" width="200px" height="200px" title="William"><br/>
-				</p>
-
-				<br/>
-
-				<p>
-					<img src="https://i.imgur.com/Rn99G1v.jpg" alt="Branda" width="200px" height="200px"" title="Branda"> <br/>
-				</p>
-				
-			</div>
-
-			<div id="right_content">
-				<p>
-					<img src="https://i.imgur.com/tgydDBz.jpg" alt="Pennie" width="200px" height="200px" title="Pennie"><br/>
-				</p>
-
-				<br/>
-
-				<p>
-					<img src="https://i.imgur.com/wTQQES0.jpg" alt="kevin" width="200px" height="200px" title="Kevin"><br/>
-				</p>
-			</div>
 		</div>
+
+		<div class="center">
+			<button onclick="profiles.prev();">previous</button>
+			<button onclick="profiles.next();">next</button>
+		</div>
+
+		<script src="javascript.js"></script>
+		<script>
+			var profiles = new Carousel();
+		</script>
 
 		<div class="content1">
 		<hr class="divider">
@@ -138,3 +144,5 @@
 	</footer>
 
 </html>
+
+
