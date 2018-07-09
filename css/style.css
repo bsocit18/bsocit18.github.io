@@ -1,6 +1,10 @@
 /*Background colour*/
 html {
-	background-color: #FFE4E1
+	background-color: white
+}
+
+a {
+	font-size:16px;
 }
 
 p {
@@ -22,7 +26,7 @@ video {
 
 /*Formatted, centered division line*/
 hr {
-	width: 700px ;
+	width: 1000px ;
 	margin-left: auto ;
 	margin-right: auto;
     display: block;
@@ -42,12 +46,16 @@ li {
 	list-style-type: none;
 }
 
+span{
+	font-size:1em;
+}
 /*ID for main name*/
-#title {
-	width: 700px ;
+.title {
+	width: 1000px ;
 	margin-left: auto ;
 	margin-right: auto ;
 	text-align: center;
+	margin-top: 80px;
 }
 
 /*ID for blurb under title*/
@@ -59,9 +67,17 @@ li {
 	font-size: 30px;
 }
 
-/*Class for main text divs, 600 witch and centered*/
+/*Left justified 1 column text content*/
+.content1 {
+	width: 1000px ;
+	margin-left: auto ;
+	margin-right: auto ;
+	text-align:left;
+}
+
+/*2 column text content*/
 .content {
-	width: 700px ;
+	width: 1000px ;
 	margin-left: auto ;
 	margin-right: auto ;
 }
@@ -75,51 +91,12 @@ li {
 	text-align: left;
 }
 
-/*Class to avoid separating alls paragraphs into two columns*/
-.content2 {
-	width: 700px ;
-	margin-left: auto ;
-	margin-right: auto ;
-}
-
 /*Class to centre elements*/
 .center {
+	width: 1000px ;
     margin-left: auto;
     margin-right: auto;
     text-align:center;
-}
-
-/*My own buttons!*/
-.button {
-	padding:8px 30px 8px 30px; 
-	display:inline-block;
-	text-decoration: none;
-	background-color:#FFE4E1;
-	border: 0.1px solid black;
-	/*Hover colour change delay*/
-	transition-duration: 0.4s;
-}
-
-/*However colour change and border removal*/
-.button:hover {
-	background-color: #E6CBC8;
-	border: 0.1px solid #E6CBC8;
-}
-
-/*Font awesome case class buttons format; overrides linked css formatting*/
-.fa {
-	padding:8px 30px 8px 30px;
-	display:inline-block;
-	text-decoration: none;
-	background-color:#FFE4E1;
-	border: 0.1px solid black;
-	transition-duration: 0.4s;
-}
-
-/*Overriding font awesome class buttons*/
-.fa:hover {
-	background-color: #E6CBC8;
-	border: 0.1px solid #E6CBC8;
 }
 
 /*Prevent discolouring of links*/
@@ -128,7 +105,15 @@ a:visited {color: black;}
 a:hover {color: black;}     
 a:active {color: black;}
 
+.divider {
+	background-color: solid black;
+  	width: 7%;
+  	height: 0px;
+  	border: 1px solid black;
+  	margin-left:0px;
+  	text-align:left;
 
+}
 
 /*Form*/
 
@@ -136,30 +121,486 @@ a:active {color: black;}
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
-    border: 1px solid #FFE4E1; 
+    border: 1px solid white; 
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    background-color : #E6CBC8; 
+    background-color : lightgrey; 
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #FFE4E1;
+    background-color: white;
     color: black;
     padding:8px 30px 8px 30px
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-	background-color: #E6CBC8;
+	background-color: lightgrey;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-    background-color: #FFE4E1;
+    background-color: white;
     padding: 20px;
     border:1px solid black;
+}
+
+#left_content {
+	float: left;
+	width: 30%;
+	padding-right:5%;
+}
+
+#middle_content {
+	float: left;
+	width:30%;
+}
+
+#right_content {
+	float: left;
+	width:30%;
+	padding-left:5%;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left:0;
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: lightgrey;
+    color: black;
+}
+
+.networkname{
+	padding:8px 30px 8px 30px
+}
+
+img {
+    border-radius: 50%;
+}
+
+#intro {
+	background:url(https://i.imgur.com/hvO3MEc.jpg);
+    margin: 0px;
+    padding: 0px;
+    height:500px;
+    width:100%;
+	margin-top: 80px;
+	overflow-x: hidden; 
+}
+
+span{
+	font-size:16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {  
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,  
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,  
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,  
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,  
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {  
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+/*This is where the default boostrap primary formatting of white text and icons inside buttons is made*/
+
+.btn-primary {
+  color: white;
+  background-color: #428bca;
+  border-color: #357ebd;
+  text-decoration:none;
+}
+
+/*TSince default white text and icons doesnt seem to work when not wrapped inside <button>, here I force white icons and text when they are inside a link tag*/
+
+.fa-external-link{
+	color:white;
+}
+
+.fa-envelope{
+	color:white;
+}
+
+.fa-linkedin{
+	color:white;
+}
+
+.fa-facebook{
+	color:white;
+}
+
+a {
+	color: white;
+}
+
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,  
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,  
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,  
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,  
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {  
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.btn-primary .badge {
+  color: #428bca;
+  background-color: #fff;
+}
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #47a447;
+  border-color: #398439;
+}
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,  
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,  
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,  
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,  
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {  
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #fff;
+  background-color: #39b3d7;
+  border-color: #269abc;
+}
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  background-image: none;
+}
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,  
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,  
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,  
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,  
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {  
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.btn-info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  color: #fff;
+  background-color: #ed9c28;
+  border-color: #d58512;
+}
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,  
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,  
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,  
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,  
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {  
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  color: #fff;
+  background-color: #d2322d;
+  border-color: #ac2925;
+}
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,  
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,  
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,  
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,  
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {  
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btn-danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+.btn-link {
+  font-weight: normal;
+  color: #428bca;
+  cursor: pointer;
+  border-radius: 0;
+}
+.btn-link,
+.btn-link:active,
+.btn-link[disabled],
+fieldset[disabled] .btn-link {  
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+  border-color: transparent;
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: #2a6496;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-link[disabled]:hover,
+fieldset[disabled] .btn-link:hover,  
+.btn-link[disabled]:focus,
+fieldset[disabled] .btn-link:focus {  
+  color: #999;
+  text-decoration: none;
+}
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+input[type="submit"].btn-block,  
+input[type="reset"].btn-block,  
+input[type="button"].btn-block {  
+  width: 100%;
 }
 
