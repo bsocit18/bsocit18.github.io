@@ -1,78 +1,84 @@
 /*Background colour*/
 html {
-	background-color: white
+  background-color: white
 }
 
 a {
-	font-size:16px;
+  font-size:16px;
 }
 
 p {
-	font-size:16px;
+  font-size:16px;
 }
 
 body {
-	font-family: "Helvetica"
+  font-family: "Helvetica"
 }
 
 h1 {
-	font-size: 45px;
+  font-size: 45px;
 }
 
 video {
-	width: 700px;
-	height:525px;
+  width: 700px;
+  height:525px;
 }
 
 /*Formatted, centered division line*/
 hr {
-	width: 1000px ;
-	margin-left: auto ;
-	margin-right: auto;
-    display: block;
-    height: 2px;
+  width: 1000px ;
+  margin-left: auto ;
+  margin-right: auto;
+  display: block;
+  height: 2px;
+  clear:both;
 }
 
 h2 {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 ul {
-	text-align: center;
+  text-align: center;
 }
 
 li {
-	display: inline-block;
-	list-style-type: none;
+  display: inline-block;
+  list-style-type: none;
 }
 
 span{
-	font-size:1em;
+  font-size:1em;
 }
+
+br {
+  clear: both
+}
+
 /*ID for main name*/
 .title {
-	width: 1000px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align: center;
-	margin-top: 80px;
+  width: 1000px ;
+  margin-left: auto ;
+  margin-right: auto ;
+  text-align: center;
+  margin-top: 80px;
 }
 
 /*ID for blurb under title*/
 #blurb {
-	width: 700px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align: center;
-	font-size: 30px;
+  width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+  text-align: center;
+  font-size: 30px;
 }
 
 /*Left justified 1 column text content*/
 .content1 {
-	width: 1000px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align:left;
+  width: 1000px ;
+  margin-left: auto ;
+  margin-right: auto ;
+  text-align:left;
 }
 
 .contentleft {
@@ -81,23 +87,24 @@ span{
   text-align:left;
 }
 
-/*2 column text content*/
-.content {
-	width: 1000px ;
-	margin-left: auto ;
-	margin-right: auto ;
+
+/*3 column text content*/
+.content3 {
+  width: 1000px ;
+  margin-left: auto ;
+  margin-right: auto ;
 }
 
 /*Class to separate any paragraphs inside divs with content class into two columns*/
-.content p {
-	-webkit-column-count:3 ;
-	column-count:3;
-	-webkit-column-gap: 50px;
-	column-gap: 50px;
-	text-align: left;
+.content3 p {
+  -webkit-column-count:3 ;
+  column-count:3;
+  -webkit-column-gap: 50px;
+  column-gap: 50px;
+  text-align: left;
 }
 
-.content img {
+.content3 img {
   -webkit-column-count:3 ;
   column-count:3;
   -webkit-column-gap: 50px;
@@ -107,7 +114,7 @@ span{
 
 /*Class to centre elements*/
 .center {
-	width: 1000px ;
+  width: 1000px ;
     margin-left: auto;
     margin-right: auto;
     text-align:center;
@@ -120,12 +127,12 @@ a:hover {color: black;}
 a:active {color: black;}
 
 .divider {
-	background-color: solid black;
-  	width: 7%;
-  	height: 0px;
-  	border: 1px solid black;
-  	margin-left:0px;
-  	text-align:left;
+  background-color: solid black;
+    width: 7%;
+    height: 0px;
+    border: 1px solid black;
+    margin-left:0px;
+    text-align:left;
 
 }
 
@@ -152,31 +159,25 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-	background-color: lightgrey;
+  background-color: lightgrey;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-    background-color: white;
-    padding: 20px;
-    border:1px solid black;
-}
 
 #left_content {
-	float: left;
-	width: 30%;
-	padding-right:5%;
+  float: left;
+  width: 30%;
+  padding-right:5%;
 }
 
 #middle_content {
-	float: left;
-	width:30%;
+  float: left;
+  width:30%;
 }
 
 #right_content {
-	float: left;
-	width:30%;
-	padding-left:5%;
+  float: left;
+  width:30%;
+  padding-left:5%;
 }
 
 /* The navigation bar */
@@ -206,25 +207,27 @@ input[type=submit]:hover {
 }
 
 .networkname{
-	padding:8px 30px 8px 30px
+  padding:8px 30px 8px 30px
 }
 
+/*round out images
 img {
     border-radius: 50%;
 }
+*/
 
 #intro {
-	background:url(https://i.imgur.com/hvO3MEc.jpg);
+  background:url(https://i.imgur.com/hvO3MEc.jpg);
     margin: 0px;
     padding: 0px;
     height:500px;
     width:100%;
-	margin-top: 80px;
-	overflow-x: hidden; 
+  margin-top: 80px;
+  overflow-x: hidden; 
 }
 
 span{
-	font-size:16px;
+  font-size:16px;
 }
 
 .btn {
@@ -329,23 +332,23 @@ fieldset[disabled] .btn-default.active {
 /*TSince default white text and icons doesnt seem to work when not wrapped inside <button>, here I force white icons and text when they are inside a link tag*/
 
 .fa-external-link{
-	color:white;
+  color:white;
 }
 
 .fa-envelope{
-	color:white;
+  color:white;
 }
 
 .fa-linkedin{
-	color:white;
+  color:white;
 }
 
 .fa-facebook{
-	color:white;
+  color:white;
 }
 
 a {
-	color: white;
+  color: white;
 }
 
 
@@ -618,3 +621,153 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+
+.textOverImage{
+    position:relative;
+    width:200px;
+    height:200px;
+    display:inline-block;
+    background-size:100%;
+    transition:0.5s;
+    overflow:hidden;
+  }
+
+/*describes hover overlay text heading formatting*/
+
+.textOverImage:before{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0px 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+
+}
+
+/*describes hover overlay text body formatting*/
+
+  .textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:0px;
+    transform:translateY(100%);
+    opacity:0;
+  }
+  
+  .textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+  }
+
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
+}
+
+
+.slideshow-container {
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
