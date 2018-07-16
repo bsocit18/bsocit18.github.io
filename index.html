@@ -13,7 +13,7 @@
 		<title>BSOC HTML & CSS Workshop</title>
 
 		<!-- External CSS -->
-		<link rel="stylesheet" href="bsocit18.github.io/css/style.css">
+		<link rel="stylesheet" href="style.css">
 		<!-- External font awesome CSS (for social media buttons) -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
 		<!-- Bootstrap CSS -->
@@ -57,6 +57,9 @@
 
 		<div class="content1">  
 			<h2> Welcome!</h2>
+		</div>
+
+		<div class="content1">
 			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue, quam posuere maximus pretium, justo leo posuere neque, fermentum dapibus arcu turpis sit amet augue. In et consequat dui. Nulla scelerisque augue eu tortor sollicitudin molestie. Donec ullamcorper vulputate quam, quis sodales dolor congue et. Duis commodo libero sed tempor lacinia. Nulla facilisi. Nullam ac ipsum varius, sagittis sapien rhoncus, dapibus mi. Phasellus fringilla ornare risus, ac semper augue aliquam at. Donec et arcu fringilla, ultricies diam a, malesuada sapien. Integer augue sem, fringilla a leo quis, luctus suscipit turpis. Vestibulum libero ligula, pulvinar placerat mauris in, rutrum consequat sapien. </p>
 		</div>
 
@@ -64,8 +67,11 @@
 			<hr class="divider">
 		</div>
 
-		<div class="content">  
+		<div class="content1">  
 			<h2> Learning Objectives</h2>
+		</div>
+
+		<div class="content3">
 			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lacinia lorem, vel ultrices dolor. Aliquam eu quam a nisi dapibus vestibulum. Integer at aliquam mi. Pellentesque facilisis semper urna, at aliquet enim. Fusce felis quam, tempor eu lacinia a, accumsan vel velit. Nunc in quam id nibh accumsan luctus. Suspendisse potenti. In elementum tristique ipsum, eu aliquet quam lobortis laoreet. Donec hendrerit eleifend luctus. Sed rhoncus urna non risus sollicitudin, non sollicitudin nisl euismod. Sed tincidunt, elit eget sagittis accumsan, dolor dolor elementum tellus, ac dignissim nibh libero in lectus. Etiam felis risus, iaculis sit amet metus ac, iaculis tristique diam. Nunc ut velit lectus. Morbi scelerisque fermentum nunc at ullamcorper. Duis suscipit libero non eleifend dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 		</div>
 
@@ -75,13 +81,15 @@
 
 		<div class="content1">  
 			<h2> Get started</h2>
-			<div class="center">
-					<button type="button" class="btn btn-primary btn-lg"><i class="fa fa-html5"></i>	HTML
-					</button>
-					<button type="button" class="btn btn-primary btn-lg"><i class="fa fa-css3"></i>	CSS
-					</button>
-			</div>
 		</div>
+
+		<div class="center">
+			<button type="button" class="btn btn-primary btn-lg"><i class="fa fa-html5"></i>	HTML
+			</button>
+			<button type="button" class="btn btn-primary btn-lg"><i class="fa fa-css3"></i>	CSS
+			</button>
+		</div>
+		
 
 		<div class="content1">
 			<hr class="divider">
@@ -92,64 +100,74 @@
 		</div>
 
 		<div class="center">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div id="left_content">
+						<a class="textOverImage" style="background-image:url(https://i.imgur.com/tgydDBz.jpg)" data-title="Pennie" data-text="Placeholder profile text"> </a>
+					</div>	
 
-			<div class="carousel">
-				<div id="left_content">
-						<img src="https://i.imgur.com/uI9hyzv.jpg" alt="Daniel" width="200px" height="200px" title="Daniel">
-						<div class="contentleft">
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor sapien sed ipsum dignissim iaculis. Suspendisse molestie interdum tincidunt. In 	cursus dolor ut nunc cursus eleifend.</p>
-						</div>
-				</div>	
+					<div id="middle_content">
+						<a class="textOverImage" style="background-image:url(https://i.imgur.com/bCQZxwW.jpg")" data-title="William" data-text="Placeholder profile text"> </a>
+					</div>
+			
+					<div id="right_content">
+						<a class="textOverImage" style="background-image:url(https://i.imgur.com/eOSai4B.png)" data-title="Branda" data-text="Placeholder profile text"> </a>
+					</div>	
+				</div>
+
+				<div class="mySlides fade">
+					<div id="left_content">
+						<a class="textOverImage" style="background-image:url(https://i.imgur.com/uI9hyzv.jpg" alt="Daniel)" data-title="Daniel" data-text="Placeholder profile text"> </a>
+					</div>	
+
 				<div id="middle_content">
-					<img src="https://i.imgur.com/bCQZxwW.jpg" alt="William" width="200px" height="200px" title="William">
-					<div class="contentleft">
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor sapien sed ipsum dignissim iaculis. Suspendisse molestie interdum tincidunt. In 	cursus dolor ut nunc cursus eleifend.</p>
-						</div>
-				</div>	
+						<a class="textOverImage" style="background-image:url(https://i.imgur.com/wTQQES0.jpg)" data-title="Kevin" data-text="Placeholder profile text"> </a>
+					</div>
+			
 				<div id="right_content">
-					<img src="https://i.imgur.com/eOSai4B.png" alt="Branda" width="200px" height="200px"" title="Branda">
-					<div class="contentleft">
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor sapien sed ipsum dignissim iaculis. Suspendisse molestie interdum tincidunt. In cursus dolor ut nunc cursus eleifend.</p>
-						</div>
+						<a class="textOverImage" style="background-image:url(https://i.imgur.com/WsGH3c3.jpg)" data-title="Chloe" data-text="Placeholder profile text"> </a>
 				</div>	
 			</div>
-
-			<div class="carousel">
-				<div id="left_content">
-						<img src="https://i.imgur.com/WsGH3c3.jpg" alt="Chloe" width="200px" height="200px" title="Chloe">
-						<div class="contentleft">
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor sapien sed ipsum dignissim iaculis. Suspendisse molestie interdum tincidunt. In 	cursus dolor ut nunc cursus eleifend.</p>
-						</div>
-				</div>	
-				<div id="middle_content">
-					<img src="https://i.imgur.com/tgydDBz.jpg" alt="Pennie" width="200px" height="200px" title="Pennie">
-					<div class="contentleft">
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor sapien sed ipsum dignissim iaculis. Suspendisse molestie interdum tincidunt. In 	cursus dolor ut nunc cursus eleifend.</p>
-						</div>
-				</div>	
-				<div id="right_content">
-					<img src="https://i.imgur.com/wTQQES0.jpg" alt="Kevin" width="200px" height="200px" title="Kevin">
-					<div class="contentleft">
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor sapien sed ipsum dignissim iaculis. Suspendisse molestie interdum tincidunt. In cursus dolor ut nunc cursus eleifend.</p>
-						</div>
-				</div>	
-
 		</div>
+
+		<br />
+		<br />
+	
 
 		<div class="center">
-			<button type="button" class="btn btn-primary">
-				<i class="fa fa-chevron-left" onclick="profiles.prev();"></i>
-			</button>
-			<button type="button" class="btn btn-primary">
-				<i class="fa fa-chevron-right" onclick="profiles.next();"></i>
-			</button>
+  			<span class="dot" onclick="currentSlide(1)"></span> 
+ 			<span class="dot" onclick="currentSlide(2)"></span>  
 		</div>
 
-		<script src="javascript.js"></script>
-		<script>
-			var profiles = new Carousel();
-		</script>
 
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+  			showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+  			showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+ 			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}    
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      			slides[i].style.display = "none";  
+  			}
+  			for (i = 0; i < dots.length; i++) {
+      			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";  
+  			dots[slideIndex-1].className += " active";
+			}
+		</script>
 
 	</body>
 
