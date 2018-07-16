@@ -1,22 +1,46 @@
 /*Background colour*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("https://i.imgur.com/rX04BIM.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 html {
   background-color: white
 }
 
 a {
-  font-size:16px;
+  font-size:20px;
 }
 
 p {
-  font-size:16px;
+  font-size:20px;
 }
 
 body {
-  font-family: "Helvetica"
+  font-family: "Helvetica";
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 75px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+h2 {
+  font-size: 30px;
 }
 
 video {
@@ -32,10 +56,6 @@ hr {
   display: block;
   height: 2px;
   clear:both;
-}
-
-h2 {
-  font-size: 30px;
 }
 
 ul {
@@ -61,7 +81,14 @@ br {
   margin-left: auto ;
   margin-right: auto ;
   text-align: center;
-  margin-top: 80px;
+}
+
+#section1 {
+    height: 90%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*ID for blurb under title*/
@@ -118,6 +145,10 @@ br {
     margin-left: auto;
     margin-right: auto;
     text-align:center;
+}
+
+.btn, .bth-primary, .btn-lg {
+  font-size: 20px;
 }
 
 /*Prevent discolouring of links*/
@@ -183,7 +214,7 @@ input[type=submit]:hover {
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: black;
+    background-color: #333;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     left:0;
@@ -201,10 +232,19 @@ input[type=submit]:hover {
 }
 
 /* Change background on mouse-over */
-.navbar a:hover {
-    background: lightgrey;
-    color: black;
+
+
+.navbar a:hover:not(.active) {
+    background-color: #428BCA;
 }
+
+
+ .navbar a.active,
+ .navbar a:hover {
+   background: #428BCA;
+ }
+
+
 
 .networkname{
   padding:8px 30px 8px 30px
@@ -325,7 +365,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: white;
   background-color: #428bca;
-  border-color: #357ebd;
+  border-color: #3276b1;
   text-decoration:none;
 }
 
@@ -624,8 +664,8 @@ input[type="button"].btn-block {
 
 .textOverImage{
     position:relative;
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     display:inline-block;
     background-size:100%;
     transition:0.5s;
@@ -640,7 +680,7 @@ input[type="button"].btn-block {
     bottom:0;
     left:0;
     right:0;
-    transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    transform:translateY(89%);/*use transform:translateY(100%); to remove footer*/
     background-color:rgba(0,0,0,0.3);
     color:#fff;
     padding:0px 8px;
