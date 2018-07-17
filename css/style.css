@@ -50,12 +50,8 @@ video {
 
 /*Formatted, centered division line*/
 hr {
-  width: 1200px ;
-  margin-left: auto ;
-  margin-right: auto;
-  display: block;
-  height: 2px;
-  clear:both;
+  width: 100% ;
+  border-top: 1px solid #E7E7E7;
 }
 
 ul {
@@ -109,6 +105,7 @@ br {
   line-height: 1.6;
 }
 
+
 .contentleft {
   margin-left: auto ;
   margin-right: auto ;
@@ -155,6 +152,22 @@ br {
   padding-top: 5px;
   border-bottom: 1px solid #E7E7E7;
   border-top: 1px solid #E7E7E7;
+}
+
+.greyback2 {
+  background-color: #F8F8F8;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid #E7E7E7;
+  border-top: 1px solid #E7E7E7;
+}
+
+.whiteback {
+  background-color: white;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .btn, .bth-primary, .btn-lg {
