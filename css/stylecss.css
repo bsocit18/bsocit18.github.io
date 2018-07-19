@@ -57,6 +57,7 @@ hr {
 
 ul {
   text-align: center;
+  list-style-type: circle;
 }
 
 li {
