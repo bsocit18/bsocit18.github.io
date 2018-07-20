@@ -237,7 +237,7 @@ input[type=submit]:hover {
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(0,0,0, 70%);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     left:0;
@@ -834,4 +834,94 @@ input[type="button"].btn-block {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+
+.image-slider {
+  position:relative;
+  display: inline-block;
+  line-height: 0;
+}
+.image-slider > div {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width:50%;
+  max-width: 100%;
+  overflow: hidden;
+  resize: horizontal;
+}
+.image-slider > div:active {
+  width:25px;
+}
+.image-slider > div:before {
+  content: '';
+  position: absolute;
+  right: 0; bottom: 0;
+  width: 15px; height: 15px;
+  padding: 1px;
+  background: linear-gradient(-90deg, white 50%, transparent 0);
+  background-clip: content-box;
+  cursor: ew-resize;
+  -webkit-filter: drop-shadow(0 0 2px black);
+  filter: drop-shadow(0 0 2px black);
+}
+.image-slider img {
+  user-select: none;
+}
+
+
+
+
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+.container {
+    position: relative;
+    max-width: 100%;
+}
+
+.container img {vertical-align: middle;}
+
+.container .contnt {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight:bold;
+
+
+  }
+
+
+#leftm_content {
+  float: left;
+  width: 45%;
+  padding-right:5%;
+}
+
+#rightm_content {
+  float: left;
+  width:45%;
+  padding-left:5%;
 }
