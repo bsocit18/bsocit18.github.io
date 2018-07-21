@@ -72,7 +72,7 @@ br {
 
 /*ID for main name*/
 .title {
-  width: 75%;
+  width: 65%;
   margin-left: auto ;
   margin-right: auto ;
   text-align: center;
@@ -98,7 +98,7 @@ br {
 
 /*Left justified 1 column text content*/
 .content1 {
-  width: 75% ;
+  width: 65% ;
   margin-left: auto ;
   margin-right: auto ;
   text-align:left;
@@ -115,7 +115,7 @@ br {
 
 /*3 column text content*/
 .content3 {
-  width: 75% ;
+  width: 65% ;
   margin-left: auto ;
   margin-right: auto ;
   line-height: 1.6;
