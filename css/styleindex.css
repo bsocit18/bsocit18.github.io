@@ -1,12 +1,13 @@
 /*Background colour*/
-body, html {
+html {
     height: 100%;
     margin: 0;
+    background-color: white
 }
 
 .bg {
     /* The image used */
-    background-image: url("https://i.imgur.com/LCnfOw4.jpg");
+    background-image: url("https://i.imgur.com/npEUA4h.png");
 
     /* Full height */
     height: 100%; 
@@ -15,10 +16,6 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-html {
-  background-color: white
 }
 
 a {
@@ -32,6 +29,8 @@ p {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  height: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -41,6 +40,7 @@ h1 {
 #headd {
   font-size: 75px;
   font-color: white;
+  text-shadow: 6px 6px 8px #000000;
 }
 
 
@@ -86,7 +86,7 @@ br {
 
 #section1 {
   /* CHANGE HEIGHT TO 100 FOR FULL CENTERING OF TEXT */
-    height: 90%; 
+    height: 100%; 
     width:100%;
     display:flex;
     align-items: center;
@@ -104,7 +104,7 @@ br {
 
 /*Left justified 1 column text content*/
 .content1 {
-  width: 70% ;
+  width: 65% ;
   margin-left: auto ;
   margin-right: auto ;
   text-align:left;
@@ -121,7 +121,7 @@ br {
 
 /*3 column text content*/
 .content3 {
-  width: 70% ;
+  width: 65% ;
   margin-left: auto ;
   margin-right: auto ;
   line-height: 1.6;
@@ -146,10 +146,10 @@ br {
 
 /*Class to centre elements*/
 .center {
-  width: 70% ;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
+  width: 65% ;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
 }
 
 .greyback {
@@ -160,12 +160,12 @@ br {
   border-top: 1px solid #E7E7E7;
 }
 
-.greyback2 {
-  background-color: #F8F8F8;
+.whiteback2 {
+  background-color: white;
   padding-bottom: 5px;
   padding-top: 5px;
-  border-bottom: 1px solid #E7E7E7;
-  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .whiteback {
@@ -876,29 +876,6 @@ input[type="button"].btn-block {
 }
 
 
-
-
-
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-
-
-
-
-
-
 .container {
     position: relative;
     max-width: 100%;
@@ -933,3 +910,52 @@ input[type="button"].btn-block {
 }
 
 
+
+/*4 column layout*/
+
+.column {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.row {
+  background-color:#F8F8F8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fa {
+  padding:8px 30px 8px 30px;
+  display:inline-block;
+  text-decoration: none;
+  background-color:#F8F8F8;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+/*Overriding font awesome class buttons*/
+.fa:hover {
+  background-color: #F8F8F8;
+}
+
+.fa-envelope {
+    color: #dd4b39;
+}
+
+.fa-external-link {
+    color: #0645AD;
+}
+
+.fa-linkedin {
+    color: #4875B4;
+}
+
+.fa-facebook {
+    color: #3B5998;
+}
