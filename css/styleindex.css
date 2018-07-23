@@ -237,20 +237,18 @@ input[type=submit]:hover {
 
 #left_content {
   float: left;
-  width: 30%;
-  padding-right:5%;
+  width: 33.333333333%;
 }
 
 #middle_content {
   float: left;
-  width:30%;
+  width:33.333333333%;
 
 }
 
 #right_content {
   float: left;
-  width:30%;
-  padding-left:5%;
+  width:33.333333333%;
 }
 
 /* The navigation bar */
@@ -847,8 +845,8 @@ ol li {
 }
 
 .column2 {
-    float: top;
-    width: 100%;
+    float: left;
+    width: 50%;
     text-align: center;
 }
 
@@ -878,18 +876,22 @@ ol li {
   transition-duration: 0.4s;
 }
 
+/*Overriding font awesome class buttons*/
+.fa:hover {
+  background-color: #F8F8F8;
+}
+
 .fa2 {
   padding:8px 30px 8px 30px;
   display:inline-block;
   text-decoration: none;
-  background-color:BLACK8;
-  border: none;
-  transition-duration: 0.4s;
+  background-color:white;
+  border: 1px solid #428BCA;
 }
 
-/*Overriding font awesome class buttons*/
-.fa:hover {
-  background-color: #F8F8F8;
+.fa2:hover {
+  background-color: #428BCA;
+  color: white;
 }
 
 .fa-envelope {
@@ -914,4 +916,20 @@ ol li {
 
 .fa-css3 {
     color: #3B5998;
+}
+
+.fa-html5:hover {
+    background-color:black;
+}
+
+.fa-css3:hover {
+    background-color:black;
+}
+
+.fa2 {
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
 }
