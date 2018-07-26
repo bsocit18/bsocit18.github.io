@@ -37,6 +37,15 @@ body, html{
   padding-top: 50px;
 }
 
+#question-slide {
+  font-weight: bold; text-align: center; font-size: 48px;
+  min-height: 400px;
+}
+
+#wrap a {
+  color: #5181E1;
+}
+
 @media only screen and (max-width: 707px) {
     .header {
         margin-top:167.33px;
@@ -109,7 +118,7 @@ a:visited {
     z-index: 1;
     text-align: right;
     padding-right: 20px;
-    border-right: 2px dashed#0092CE;
+    border-right: 2px dashed #0092CE;
     font-size: 14px;
 }
 .page-navigation li {
