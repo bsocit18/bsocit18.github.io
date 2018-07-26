@@ -993,3 +993,15 @@ ol li {
   background-color: #428BCA;
   color: white;
 }
+
+
+@media (max-width: 1025px) {
+
+  #headd {
+    -ms-transform: scale(0.6, 0.6); /* IE 9 */
+    -webkit-transform: scale(0.6, 0.6); /* Safari */
+    transform: scale(0.6, 0.6);
+
+  }
+  
+}
