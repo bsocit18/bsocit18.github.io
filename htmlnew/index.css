@@ -202,12 +202,12 @@ a:visited {
     text-align: right;
     padding-right: 20px;
     border-right: 2px dashed#0092CE;
-    font-size: 18px;
+    font-size: 14px;
 }
 .page-navigation li {
     width: 100%;
     list-style-type: none;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .page-navigation a {
     padding: 10px;
