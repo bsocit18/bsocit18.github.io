@@ -193,12 +193,12 @@ br {
   border-top: 1px solid #E7E7E7;
 }
 
-.whiteback2 {
-  background-color: white;
+.greyback2 {
+  background-color: #F8F8F8;
   padding-bottom: 5px;
   padding-top: 5px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border-bottom: 1px solid #F8F8F8;
+  border-top: 1px solid #F8F8F8;
 }
 
 .whiteback {
@@ -892,14 +892,12 @@ ol li {
   padding:8px 30px 8px 30px;
   display:inline-block;
   text-decoration: none;
-  background-color:white;
   border: none;
   transition-duration: 0.4s;
 }
 
-/*Overriding font awesome class buttons*/
-.fa:hover {
-  background-color: #F8F8F8;
+.fa:hover{
+    background-color:white
 }
 
 .fa2 {
@@ -943,11 +941,11 @@ ol li {
 }
 
 .fa-html5:hover {
-    background-color:black;
+    background-color:#F8F8F8;
 }
 
 .fa-css3:hover {
-    background-color:black;
+    background-color:#F8F8F8;
 }
 
 .fa2 {
