@@ -852,22 +852,10 @@ ol li {
   float: left;
   width:45%;
   padding-left:5%;
-  text-align: center;
   font-size:25px;
   color: #333;
   margin-top: 0;
 }
-
-#rightm_content2 {
-  float: left;
-  width:45%;
-  padding-left:5%;
-  text-align: left;
-  font-size:25px;
-  color: #333;
-  margin-top: 0;
-}
-
 
 /*4 column layout*/
 
