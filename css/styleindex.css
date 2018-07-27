@@ -193,12 +193,12 @@ br {
   border-top: 1px solid #E7E7E7;
 }
 
-.greyback2 {
-  background-color: #F8F8F8;
+.whiteback2 {
+  background-color: white;
   padding-bottom: 5px;
   padding-top: 5px;
-  border-bottom: 1px solid #E7E7E7;
-  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .whiteback {
