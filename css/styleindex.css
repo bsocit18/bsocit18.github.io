@@ -896,7 +896,9 @@ ol li {
   transition-duration: 0.4s;
 }
 
-
+.fa:hover{
+    background-color:#F8F8F8
+}
 
 .fa2 {
   padding:8px 30px 8px 30px;
