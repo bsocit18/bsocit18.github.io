@@ -76,7 +76,6 @@ body {
 
 #dots li {
   opacity: 0.8;
-  background-image: url("http://arielbeninca.com/Storage/dot.png");
   width: 10px;
   height: 10px;
   cursor: pointer;
@@ -89,9 +88,17 @@ body {
 -moz-transition: all 0.2s ease-in-out; /*this works in firefox*/
 -webkit-transition: all 0.2s ease-in-out;
 }
-#dots li:hover, #dots li.selected {
+#dots li:hover {
   background-color:#809bc9;
-  margin-top: 2.5px;
+  transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out; /*this works in firefox*/
+-webkit-transition: all 0.2s ease-in-out;
+}
+
+#dots li.selected {
+  background-color:#809bc9;
+  position:relative;
+  top: 2.5px;
   width: 15px;
   height:15px;
   transition: all 0.2s ease-in-out;
@@ -101,11 +108,14 @@ body {
 
 
 @media (max-width: 1025px) {
-
   #photos {
     top:220px;
     height: calc(100% - 220px);
-
   }
+}
 
+@media (max-width: 790px) {
+  #dots {
+    min-width: 400px;
+  }
 }
