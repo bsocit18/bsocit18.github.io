@@ -79,8 +79,7 @@ body, html{
 
 .title {
   position: absolute;
-  color:white; 
-  font-weight:bold;
+  color:white;
   left: 0px;
   top: 40%;
   width: 100%; 
