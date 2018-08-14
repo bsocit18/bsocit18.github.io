@@ -10,7 +10,8 @@ body {
 #photos {
   position: relative;
   width: auto;
-  height: 100%;
+  top: 100px;
+  height: calc(100% - 100px);
   clear: both;
   margin: 0px auto;
 }
@@ -95,5 +96,16 @@ body {
   height:15px;
   transition: all 0.2s ease-in-out;
 -moz-transition: all 0.2s ease-in-out; /*this works in firefox*/
--webkit-transition: all 0.2s ease-in-out; 
+-webkit-transition: all 0.2s ease-in-out;
+}
+
+
+@media (max-width: 1025px) {
+
+  #photos {
+    top:220px;
+    height: calc(100% - 220px);
+
+  }
+
 }
