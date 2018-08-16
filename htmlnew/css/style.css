@@ -1,0 +1,121 @@
+body {
+  background: white;
+}
+
+.imgslide {
+  height: 100vh !important;
+  overflow: hidden;
+}
+
+#photos {
+  position: relative;
+  width: auto;
+  top: 100px;
+  height: calc(100% - 100px);
+  clear: both;
+  margin: 0px auto;
+}
+#photos img {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#photos img.previous {
+  z-index: 1;
+}
+#photos img.current {
+  z-index: 2;
+}
+
+#dots {
+  padding: 0;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#next {
+  background:;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  float: right;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  right: 100px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#prev {
+  background-image: ;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 100px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#dots li {
+  opacity: 0.8;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 3px solid #809bc9;
+  border-radius: 50%;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out; /*this works in firefox*/
+-webkit-transition: all 0.2s ease-in-out;
+}
+#dots li:hover {
+  background-color:#809bc9;
+  transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out; /*this works in firefox*/
+-webkit-transition: all 0.2s ease-in-out;
+}
+
+#dots li.selected {
+  background-color:#809bc9;
+  position:relative;
+  top: 2.5px;
+  width: 15px;
+  height:15px;
+  transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out; /*this works in firefox*/
+-webkit-transition: all 0.2s ease-in-out;
+}
+
+
+@media (max-width: 1025px) {
+  #photos {
+    top:220px;
+    height: calc(100% - 220px);
+  }
+}
+
+@media (max-width: 790px) {
+  #dots {
+    min-width: 400px;
+  }
+}
