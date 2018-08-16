@@ -79,7 +79,7 @@ body {
   width: 10px;
   height: 10px;
   cursor: pointer;
-  border: 3px solid #809bc9;
+  border: 3px solid #333;
   border-radius: 50%;
   list-style-type: none;
   display: inline-block;
@@ -89,14 +89,14 @@ body {
 -webkit-transition: all 0.2s ease-in-out;
 }
 #dots li:hover {
-  background-color:#809bc9;
+  background-color:#333;
   transition: all 0.2s ease-in-out;
 -moz-transition: all 0.2s ease-in-out; /*this works in firefox*/
 -webkit-transition: all 0.2s ease-in-out;
 }
 
 #dots li.selected {
-  background-color:#809bc9;
+  background-color:#333;
   position:relative;
   top: 2.5px;
   width: 15px;
