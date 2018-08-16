@@ -41,11 +41,15 @@ body {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-
+#next img, #prev img {
+  height: 120px;
+}
 #next {
-  background:;
+  color: white;
+  font-size: 40px;
+  background-image: ;
   background-repeat: no-repeat;
-  width: 120px;
+  width: 110px;
   height: 120px;
   cursor: pointer;
   float: right;
@@ -59,7 +63,7 @@ body {
 }
 
 #prev {
-  background-image: ;
+  color: white;
   background-repeat: no-repeat;
   width: 120px;
   height: 120px;
