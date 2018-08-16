@@ -54,7 +54,7 @@ body {
   cursor: pointer;
   float: right;
   position: absolute;
-  top: 50%;
+  top: calc(50% + 40px);
   z-index: 5;
   right: 100px;
   -webkit-transform: translateY(-50%);
@@ -71,7 +71,7 @@ body {
   z-index: 5;
   position: absolute;
   float: left;
-  top: 50%;
+  top: calc(50% + 40px);
   left: 100px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
