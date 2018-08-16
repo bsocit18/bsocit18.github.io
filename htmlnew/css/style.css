@@ -43,6 +43,7 @@ body {
 }
 #next img, #prev img {
   height: 120px;
+  opacity: 0.5;
 }
 #next {
   color: white;
@@ -56,7 +57,7 @@ body {
   position: absolute;
   top: calc(50% + 40px);
   z-index: 5;
-  right: 100px;
+  right: 10px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -72,7 +73,7 @@ body {
   position: absolute;
   float: left;
   top: calc(50% + 40px);
-  left: 100px;
+  left: 0px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -115,6 +116,13 @@ body {
   #photos {
     top:220px;
     height: calc(100% - 220px);
+  }
+
+  #next, #prev{
+    top: calc(50% + 80px);
+    -ms-transform: scale(0.7, 0.7); /* IE 9 */
+-webkit-transform: scale(0.7, 0.7); /* Safari */
+transform: scale(0.7, 0.7);
   }
 }
 
